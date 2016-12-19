@@ -200,7 +200,7 @@ weekend_steps <- aggregate(weekend_data$steps, by = list(weekend_data$interval),
 # Create plots
 par(mfrow = c(2,1))
 plot(week_steps$x ~ week_steps$Group.1, type = "l", main = "Weekdays", xlab = "Interval", ylab = "Number of steps", col = "blue")
-plot(weekend_steps$x ~ weekend_steps$Group.1, type = "l", main = "eekend", xlab = "Interval", ylab = "Number of steps", col = "red")
+plot(weekend_steps$x ~ weekend_steps$Group.1, type = "l", main = "Weekend", xlab = "Interval", ylab = "Number of steps", col = "red")
 ```
 
 ![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png)
